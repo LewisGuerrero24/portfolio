@@ -13,15 +13,9 @@ function App() {
   return (
     <>
     <Container fluid className='Container-body'>
-      <Container fluid>
-        <Row>
-          <Col>
-            <Navigation/>
-          </Col>
-        </Row> 
-      </Container>
-      <Container fluid  className='Container-Tittle' >
-        <Row className='Tittle-Row'>
+      <Navigation/>
+      <Container fluid  className='Container-main' >
+        <Row className='Main-Row'>
           <TitleName/>
           <RoutesPages/> 
         </Row>

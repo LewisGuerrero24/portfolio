@@ -15,22 +15,23 @@
 .Container-body{
   background-color: var(--color-principal);
   font-family: 'Exo', sans-serif;
+  height: 100vh;
 }
 
 
 
 
-.Container-Tittle {
+.Container-main {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative; /* O cualquier posición que necesites */
   z-index: 9999; 
-  height: 100vh;
+  height: 100%;
 
 }
 
-.Tittle-Row {
+.Main-Row {
   text-align: center;
  
 }

@@ -1,0 +1,104 @@
+#root {
+    --color-principal:#1F1E26; 
+    --color-secondary:#D9CDBF;
+    --color-third:#72A603;
+    --color-four:#F27B13;
+    --color-five:#F25D07;
+    --color-six: #f3eae7;
+  }
+
+p {
+    color: aliceblue;
+}
+
+.Container-main-about {
+    margin: 10% auto;
+    width: 80%;
+}
+
+
+.Container-about {
+    font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.Container-about > h1 {
+    color: var(--color-six);
+    align-items: start;
+}
+
+.Container-about > hr {
+    background-color: var(--color-third);
+    height: 2.5px;
+    border-radius:10px;
+}
+
+.Container-about > p {
+    font-weight: 400;
+}
+
+
+.img-about {
+    background-color: #D9CDBF;
+    height: 60vh;
+    overflow: hidden;
+    padding: 0%;
+    
+}
+
+.img-about > img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.About-Row {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    gap: 30px;
+    position: relative; /* O cualquier posición que necesites */
+  z-index: 9999; 
+  border-radius: 50px; 
+  
+
+}
+
+.span-name {
+    font-weight: 700;
+}
+
+
+.expand-enter {
+    opacity: 0;
+    transform: scale(0.9) rotate(-10deg);
+  }
+  .expand-enter-active {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+    transition: opacity 500ms, transform 500ms;
+  }
+  .expand-exit {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+  .expand-exit-active {
+    opacity: 0;
+    transform: scale(0.9) rotate(10deg);
+    transition: opacity 500ms, transform 500ms;
+  }
+  
+  .languages {
+    margin-top: 10px;
+    width:30%;
+    font-weight: bold;
+    background: var(--color-principal);
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 4px 12px 0px rgba(0,0,0,0.66);
+-moz-box-shadow: 3px 4px 12px 0px rgba(0,0,0,0.66);
+box-shadow: 3px 4px 12px 0px rgba(0,0,0,0.66);
+  }
+  
