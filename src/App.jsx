@@ -3,13 +3,12 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Navigation from './Components/Navigation';
 import Container from 'react-bootstrap/esm/Container';
-import SectionHeader from './Components/SectionHeader';
 import DesignBackground from './Components/DesignBackground';
-
-
+import TitleName from './Components/TitleName';
+import RoutesPages from './Components/RoutesPages';
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
@@ -21,9 +20,10 @@ function App() {
           </Col>
         </Row> 
       </Container>
-      <Container fluid >
-        <Row >
-        <SectionHeader/>
+      <Container fluid  className='Container-Tittle' >
+        <Row className='Tittle-Row'>
+          <TitleName/>
+          <RoutesPages/> 
         </Row>
       </Container>  
      <DesignBackground/>
