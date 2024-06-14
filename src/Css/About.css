@@ -31,7 +31,7 @@ p {
 }
 
 .Container-about > hr {
-    background-color: var(--color-third);
+    background-color: var(--color-five);
     height: 2.5px;
     border-radius:10px;
 }
@@ -40,6 +40,20 @@ p {
     font-weight: 400;
 }
 
+.btns-about {
+  display: flex;
+  gap: 10px;
+}
+
+.container-about-btn {
+  text-decoration: none;
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.container-about-btn:hover {
+  text-decoration: underline;
+}
 
 .img-about {
     background-color: #D9CDBF;
@@ -71,34 +85,53 @@ p {
 }
 
 
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .expand-enter {
-    opacity: 0;
-    transform: scale(0.9) rotate(-10deg);
-  }
-  .expand-enter-active {
-    opacity: 1;
-    transform: scale(1) rotate(0);
-    transition: opacity 500ms, transform 500ms;
-  }
-  .expand-exit {
-    opacity: 1;
-    transform: scale(1) rotate(0);
-  }
-  .expand-exit-active {
-    opacity: 0;
-    transform: scale(0.9) rotate(10deg);
-    transition: opacity 500ms, transform 500ms;
-  }
-  
-  .languages {
-    margin-top: 10px;
-    width:30%;
-    font-weight: bold;
-    background: var(--color-principal);
-    padding: 10px;
-    border-radius: 5px;
-    -webkit-box-shadow: 3px 4px 12px 0px rgba(0,0,0,0.66);
--moz-box-shadow: 3px 4px 12px 0px rgba(0,0,0,0.66);
-box-shadow: 3px 4px 12px 0px rgba(0,0,0,0.66);
-  }
-  
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.expand-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 700ms, transform 700ms;
+}
+.expand-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.expand-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 700ms, transform 700ms;
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 20%;
+  font-weight: bold;
+  background: var(--color-principal);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  animation: slideInFromLeft 0.7s forwards;
+}
+
+.container-languajes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
