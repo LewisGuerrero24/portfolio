@@ -8,6 +8,9 @@ import Navigation from './Navigation';
 import DesignBackground from './DesignBackground';
 import arrow from '../assets/arrow.svg';
 import BiomedicalSoft from '../assets/BiomedicalSoft.jpg';
+import Shoes from '../assets/shoes.jpg';
+import Restaurante from '../assets/restaurante.png';
+
 
 const Projects = () => {
   const namesProjects = ['BiomedicalSoft', 'Charlie SHoes', 'Restaurante My primavera'];
@@ -19,6 +22,10 @@ const Projects = () => {
         setIsHovered(true);
         if(name == 'BiomedicalSoft'){
             setIsNameImg(<img src={BiomedicalSoft} alt='imagenproyecto'></img>)
+        }else if(name == 'Charlie SHoes'){
+          setIsNameImg(<img src={Shoes} alt='imagenproyecto'></img>)
+        }else if(name == 'Restaurante My primavera'){
+          setIsNameImg(<img src={Restaurante} alt='imagenproyecto'></img>)
         }else{
             setIsNameImg(<img src={name} alt='imagenproyecto'></img>)
         }
@@ -32,7 +39,7 @@ const Projects = () => {
       };
     
 
-  return (
+  return (     
     <Container fluid className='Container-body'>
       <Navigation />
       <Container fluid className='Container-main-projects'>

@@ -6,7 +6,7 @@ import '../Css/App.css';
 import '../Css/About.css';
 import Navigation from './Navigation';
 import DesignBackground from './DesignBackground';
-import person from '../assets/person.webp';
+import person from '../assets/person.png';
 import { CSSTransition } from 'react-transition-group';
 import arrowdown from '../assets/arrow-down.svg'
 import ClickLanguajes from './ClickLanguajes';

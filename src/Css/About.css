@@ -22,6 +22,8 @@ p {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  
+  
 
 }
 
@@ -34,6 +36,7 @@ p {
     background-color: var(--color-five);
     height: 2.5px;
     border-radius:10px;
+    
 }
 
 .Container-about > p {
@@ -57,7 +60,8 @@ p {
 
 .img-about {
     background-color: #D9CDBF;
-    height: 60vh;
+    height: 50vh;
+    width: 40vh;
     overflow: hidden;
     padding: 0%;
     
@@ -71,8 +75,8 @@ p {
 
 .About-Row {
     display: grid;
-    grid-template-columns: 65% 35%;
-    gap: 30px;
+    grid-template-columns: 50% 50%;
+    gap: 7%;
     position: relative; /* O cualquier posición que necesites */
   z-index: 9999; 
   border-radius: 50px; 
